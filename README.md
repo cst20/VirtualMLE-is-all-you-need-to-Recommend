@@ -13,7 +13,7 @@ This subdirectory focuses on a clean and reproducible release version of the pro
 
 For a high-level framework overview, please see:
 
-- [overview.pdf](./overview.pdf)
+![Overview](./VirtualMLE/overview.png)
 
 ## Implementation Context
 
