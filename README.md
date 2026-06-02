@@ -75,14 +75,14 @@ The intended search protocol is:
 ### SASRec
 
 ```bash
-cd /opt/tiger/LLRM_eval/VirtualMLE/SASRec/Baby
+cd VirtualMLE/SASRec/Baby
 python ../run_sasrec.py --domain baby --output_json output/run_result_baby.json
 ```
 
 ### HSTU
 
 ```bash
-cd /opt/tiger/LLRM_eval/VirtualMLE/HSTU/Baby
+cd VirtualMLE/HSTU/Baby
 python ../run_hstu.py --domain baby --output_json output/run_result_baby.json
 ```
 
