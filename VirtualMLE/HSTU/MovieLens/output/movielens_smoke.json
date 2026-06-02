@@ -1,0 +1,70 @@
+{
+  "config": {
+    "domain": "movielens",
+    "domain_dir": "/opt/tiger/LLRM_eval/github_baseline_release/HSTU/MovieLens",
+    "data_path": "/opt/tiger/LLRM_eval/github_baseline_release/HSTU/MovieLens/sequential_data_processed.txt",
+    "device": "cuda:0",
+    "model": "HSTU",
+    "max_len": 100,
+    "hidden_dim": 64,
+    "linear_dim": 16,
+    "attention_dim": 16,
+    "num_blocks": 2,
+    "num_heads": 2,
+    "dropout": 0.5,
+    "attn_dropout": 0.0,
+    "batch_size": 128,
+    "eval_batch_size": 256,
+    "epochs": 1,
+    "lr": 0.0003,
+    "weight_decay": 0.0,
+    "optimizer": "adamw",
+    "train_targets": "all_positions",
+    "train_window_size": 0,
+    "num_negatives": 500,
+    "temperature": 0.05,
+    "seed": 20260521
+  },
+  "data_stats": {
+    "num_users": 6040,
+    "num_items": 3706,
+    "num_interactions_total": 1000209,
+    "train_users": 6040,
+    "train_interactions": 988129,
+    "training_input_tokens": 437939,
+    "supervised_targets": 437939
+  },
+  "model_stats": {
+    "total_params": 265166,
+    "trainable_params": 265166
+  },
+  "epoch_logs": [
+    {
+      "epoch": 1,
+      "avg_loss": 8.980090856552124,
+      "val_metrics": {
+        "Recall@5": 0.014735099337748345,
+        "Recall@10": 0.02185430463576159,
+        "NDCG@5": 0.009450063617226332,
+        "NDCG@10": 0.011705392353433456
+      },
+      "epoch_sec": 22.667718172073364,
+      "no_improve_evals": 0,
+      "early_stop_triggered": false
+    }
+  ],
+  "best_val_metrics": {
+    "Recall@5": 0.014735099337748345,
+    "Recall@10": 0.02185430463576159,
+    "NDCG@5": 0.009450063617226332,
+    "NDCG@10": 0.011705392353433456
+  },
+  "best_epoch": 1,
+  "test_metrics": {
+    "Recall@5": 0.01390728476821192,
+    "Recall@10": 0.01870860927152318,
+    "NDCG@5": 0.008627722552038393,
+    "NDCG@10": 0.010146713992889536
+  },
+  "total_train_eval_sec": 39.58241248130798
+}
